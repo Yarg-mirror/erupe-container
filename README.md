@@ -31,7 +31,7 @@ podman run -d --net erupe --restart=always --name pgerupe -p 127.0.0.1:5432:5432
 podman run -d --net erupe --restart=always --name srverupe -p 53310:53310 -p 53312:53312 -p 54001:54001 -p 54002:54002 -p 54003:54003 -p 54004:54004 -p 54005:54005 -p 54006:54006 -p 54007:54007 -p 54008:54008 -v <system path>:/app/bin localhost/srverupe
 ```
 
-Before starting the server container, think about replacing **<system path>** by a path from your system where you will have to set the directories events, quests and scenarios containing the differents quests that can be taken during the game.
+Before starting the server container, think about replacing *system path* by a path from your system where you will have to set the directories events, quests and scenarios containing the differents quests that can be taken during the game.
 
 ### Docker
 
@@ -58,8 +58,9 @@ docker run -d --net erupe --restart=always --name pgerupe -p 127.0.0.1:5432:5432
 docker run -d --net erupe --restart=always --name srverupe -p 53310:53310 -p 53312:53312 -p 54001:54001 -p 54002:54002 -p 54003:54003 -p 54004:54004 -p 54005:54005 -p 54006:54006 -p 54007:54007 -p 54008:54008 -v <system path>:/app/bin localhost/srverupe
 ```
 
-Before starting the server container, think about replacing **<system path>** by a path from your system where you will have to set the directories events, quests and scenarios containing the differents quests that can be taken during the game.
+Before starting the server container, think about replacing *system path* by a path from your system where you will have to set the directories events, quests and scenarios containing the differents quests that can be taken during the game.
 
+---
 
 ## TODO
   * Add ENV variables to manage the Erupe config.json file.
