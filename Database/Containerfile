@@ -1,4 +1,4 @@
-FROM docker.io/postgres:alpine
+FROM docker.io/postgres:15-alpine
 ENV POSTGRES_PASSWORD=azerty
 RUN mkdir /sql/
 COPY sql/*.sql /sql/

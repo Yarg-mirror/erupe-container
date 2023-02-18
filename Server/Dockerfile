@@ -1,4 +1,4 @@
-FROM docker.io/debian:latest
+FROM docker.io/debian:bullseye-slim
 
 RUN mkdir /app
 WORKDIR /app
