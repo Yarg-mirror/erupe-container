@@ -1,6 +1,7 @@
 version: '3'
 services:
   pgerupe:
+    build: Database/
     image: docker.io/kane21/pgerupe:9.1
     container_name: pgerupe
     ports:
@@ -13,6 +14,7 @@ services:
       domainname: "pgerupe"
 
   srverupe:
+    build: Server/
     image: docker.io/kane21/srverupe:9.1
     container_name: srverupe
     ports:
